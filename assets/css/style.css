@@ -1,0 +1,35 @@
+.my-cont{
+    max-width: 600px;
+    padding: 30px;
+}
+
+.box-10{
+    width: calc(100% / 10);
+    aspect-ratio: 1/1;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-9{
+    width: calc(100% / 9);
+    aspect-ratio: 1/1;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-7{
+    width: calc(100% / 7);
+    aspect-ratio: 1/1;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color{
+    background-color: brown;
+}
