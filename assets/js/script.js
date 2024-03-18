@@ -36,7 +36,7 @@ function playGame(){
         if(bombs.includes(boxClicked)){
             this.innerHTML = "💣";
             this.classList.add('red');
-            endGame();
+            endGame(openedBoxes);
         } else{
             this.classList.add('color');
             openedBoxes++;
@@ -57,9 +57,9 @@ function generateBombs(diff){
     return(bombs);
 }
 
-function endGame(){
+function endGame(openedBoxes){
     setTimeout(function(){
-        alert("Hai perso");
+        alert("Hai perso! Punteggio: " +openedBoxes);
         playGame();
     },100);
 }
@@ -68,13 +68,13 @@ function checkWin(openedBoxes, difChoice){
     console.log(openedBoxes);
 
     if(difChoice  === 'facile' && openedBoxes === (84)){
-        alert("Hai vinto!")
+        alert("Hai vinto! Punteggio: 84" )
         playGame();
     } else if(difChoice  === 'intermedio' && openedBoxes === (75)){
-        alert("Hai vinto!")
+        alert("Hai vinto! Punteggio: 75")
         playGame();
     } else if(difChoice  === 'difficile' && openedBoxes === (34)){
-        alert("Hai vinto!")
+        alert("Hai vinto! Punteggio: 34")
         playGame();
     }
 }
