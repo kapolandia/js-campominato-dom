@@ -31,5 +31,9 @@
 }
 
 .color{
+    background-color: rgb(84, 84, 255);
+}
+
+.red{
     background-color: brown;
 }
